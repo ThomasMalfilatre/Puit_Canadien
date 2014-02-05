@@ -1,4 +1,4 @@
-<?php?>
+<?php ?>
 <header>
 	<h1><a href='.'>Graphes GTE</a></h1>
 	 <nav>
@@ -9,4 +9,4 @@
 		</ul>
 	</nav> 
 </header>
-<?php?>
+<?php ?>

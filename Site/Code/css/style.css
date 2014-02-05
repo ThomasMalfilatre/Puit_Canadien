@@ -1,0 +1,202 @@
+/* Z-INDEX 10 */
+
+body
+{
+	min-width: 800px;
+	max-width: 100%;
+	height: 100%;
+	
+	margin: auto;
+	
+	background: rgba(247,247,247,1);
+
+	overflow: hidden;
+}
+
+a:link
+{
+	color: black;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: silver;
+}
+
+
+/* Z-INDEX 20 */
+
+header
+{
+	width: 100%;
+	height: 40px;
+	
+	position: absolute;
+	top: 0;
+		
+	background: rgba(95,191,127,1);
+}
+
+#contenu
+{
+	width: 100%;
+	height: auto;
+	
+	position: absolute;
+	clear: both;
+	top: 40px;
+	bottom: 30px;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+footer
+{
+	width: 100%;
+	height: 30px;
+	
+	position: absolute;
+	clear: both;
+	bottom: 0%;
+		
+	background: rgba(95,191,127,1);
+}
+
+/* Z-INDEX 30 */
+
+header h1
+{
+	width: 20%;
+	height: auto;
+	
+	float: left;
+	margin: 0;
+	margin-top: 16px;
+	padding: 0;
+	
+	font-size: 18pt;
+	text-align: center;
+	line-height: 0;
+}
+
+header nav
+{
+	width: auto;
+	height: 100%;
+	
+	margin: 0;
+	margin-left: 20%;
+	
+	background: rgba(127,127,127,0.5);
+}
+
+footer p
+{
+	width: auto;
+	height: auto;
+	
+	margin: auto;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	margin-right: 12px;
+	
+	font-size: 8pt;
+	text-align: right;
+}
+
+/* Z-INDEX 40 */
+
+header h1 a:link
+{
+	color: rgba(255,255,255,0.9);
+	text-shadow: rgba(191,247,127,0.7) 0px 0px 8px ;
+}
+
+header h1 a:hover
+{
+	text-shadow: rgba(191,247,127,0.9) 0px 0px 4px ;
+}
+
+header h1 a:active
+{
+	color:rgba(255,255,255,1);
+	text-shadow: rgba(191,247,127,1) 0px 0px 8px ;
+}
+
+header h1 a:visited
+{
+	color: rgba(255,255,255,0.9);
+	text-shadow: rgba(191,247,127,0.7) 0px 0px 8px ;
+} 
+
+header nav ul
+{
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+	
+	display: block;
+}
+
+/* Z-INDEX 50 */
+
+header nav ul li
+{
+	width: 33%;
+	height: 30px;
+
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+
+	float: left;
+
+	list-style-type: none;
+
+	text-align: center;
+}
+
+/* Z-INDEX 60 */
+
+header nav ul li h2
+{	
+	min-width: 0%;
+	max-width: 19%;
+
+	margin: auto;
+	margin-top: 9px;
+	padding: 0;
+
+	text-align: center;
+	line-height:0;
+	font-size: 12pt;
+}
+
+/* Z-INDEX 70 */
+
+header nav ul li h2 a:link
+{
+	color: rgba(255,255,255,0.9);
+	text-decoration: none;
+} 
+
+header nav ul li h2 a:hover
+{
+	text-shadow: rgba(247,223,111,1) 0px 0px 3px ;
+}
+
+header nav ul li h2 a:active
+{
+	color:rgba(255,255,255,1);
+	text-shadow: rgba(223,251,191,1) 0px 0px 4px ;
+} 
+
+header nav ul li h2 a:visited
+{
+	color: rgba(255,255,255,0.9);
+}

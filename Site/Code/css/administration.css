@@ -1,0 +1,31 @@
+/* Z-INDEX 30 */
+
+#contenu form
+{	
+	margin-top: 15px;
+	margin-left: 66px;
+	margin-right: 66px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+#ajout form
+{	
+	margin-top: 100px;
+	margin-left: 66px;
+	margin-right: 66px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.tabs-listeSondes
+{
+	font-size: 0.6em;
+	height: 400px;
+	overflow: auto;
+}
+
+#tabs
+{
+	font-size: 11pt;
+}

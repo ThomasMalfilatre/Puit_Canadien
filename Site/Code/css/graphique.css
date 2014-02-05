@@ -1,0 +1,76 @@
+/* Z-INDEX 30 */
+
+#contenu
+{
+	width: 100%;
+	height: auto;
+	
+	position: absolute;
+	clear: both;
+	top: 40px;
+	bottom: 30px;
+
+	overflow-y: auto;
+	
+	margin : 0;
+	padding : 0;
+	background-color: #FFFFFF;
+}
+
+#tabs
+{
+	width : 100% ;
+	height : 100% ;
+	
+	margin : 0;
+	padding : 0;
+	
+	font-size: 11pt;
+	clear: both ;
+}
+
+#contenu #tabs #ui
+{
+	width : 99%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+}
+
+#contenu #tabs #tabs-1
+{
+	height: 100%;
+}
+
+#contenu #tabs #tabs-1 #ui form
+{
+	width: 18%;
+	height: 80%;
+
+	margin: 0;
+	padding : 0;
+
+	padding-left: 1%;
+	padding-right:1%;
+	border: solid;
+	border-width: 1px;
+	float: left;
+	
+	background: rgba(0,0,0,0.1);
+
+	font-size: 9pt;
+
+	overflow-y: scroll ;
+}
+
+#contenu #tabs #tabs-1 #ui #graph
+{
+	width: 79%;
+	height: 80%;
+
+	margin: 0;
+	padding: 0;
+	
+	float: left;
+}

@@ -9,12 +9,11 @@
 		?>
 	
 		<link rel='stylesheet' type='text/css' href='css/administration.css' />
-		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="css/jquery-ui.css" />
 	
-		<script src="scripts/jquery-1.9.1.min.js"></script>
-		<script src="scripts/jquery-ui.js"></script>
-		<script src="scripts/jquery-ui-i18n.min.js"></script>
-		<script type="text/javascript" src="admin/menu.js"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery-ui.js"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery-ui-i18n.min.js"></script>
 		<script type="text/javascript" src="admin/menu.js"></script>
 
 		<script type="text/javascript">

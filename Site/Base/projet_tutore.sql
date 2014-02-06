@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mer 05 Février 2014 à 07:10
+-- Généré le: Jeu 06 Février 2014 à 08:08
 -- Version du serveur: 5.5.35-0ubuntu0.13.10.2
 -- Version de PHP: 5.5.3-1ubuntu2.1
 
@@ -32,6 +32,33 @@ CREATE TABLE IF NOT EXISTS `Appartient_Corbeille` (
   PRIMARY KEY (`Sonde_id`,`Corbeille_id`),
   KEY `Corbeille_id` (`Corbeille_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `Appartient_Corbeille`
+--
+
+INSERT INTO `Appartient_Corbeille` (`Sonde_id`, `Corbeille_id`) VALUES
+(1, 1),
+(2, 1),
+(3, 1),
+(4, 1),
+(5, 1),
+(6, 1),
+(7, 2),
+(8, 2),
+(9, 2),
+(10, 3),
+(11, 3),
+(12, 3),
+(13, 3),
+(14, 3),
+(15, 3),
+(16, 4),
+(17, 4),
+(18, 4),
+(19, 8),
+(20, 8),
+(21, 8);
 
 -- --------------------------------------------------------
 

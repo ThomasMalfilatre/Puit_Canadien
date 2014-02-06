@@ -1,4 +1,4 @@
-<?php
+<?php //blablablabla
 	$pass = '0000';
 	
 	if(isset($_POST['pass'])){

@@ -5,4 +5,6 @@ function placer_sonde(nom, x, y, z, r, g, b){
 	sonde.position.set(x, y, z);
 	sonde.name = "Sonde "+nom;
 	scene.add(sonde);
+
+	targetList.push(sonde);
 }

@@ -17,7 +17,8 @@ var FAR = 20000;
 var projector, projector2, mouse = { x: 0, y: 0 }, INTERSECTED;
 var sprite1;
 var canvas1, context1, texture1;
-var targetList = [];
+var targetList = []; // liste des selectionnable
+var selected = []; // liste des sondes selectionne
 
 /*** INITIALISATION ***/
 init();
@@ -164,8 +165,11 @@ function onDocumentMouseDown( event ){
 	if ( intersects.length > 0 ){
 		console.log("Hit @ " + toString( intersects[0].point ) );
 		// change the color of the closest face.
-		intersects[ 0 ].face.color.setRGB( 0, 0, 0 ); 
+		console.log(intersects[0].object.name);
+		intersects[ 0 ].object.material.color.setRGB( 0, 0, 0 );
 		intersects[ 0 ].object.geometry.colorsNeedUpdate = true;
+		selected.push(intersects[0].object);
+		// console.log(selected[0]); 
 	}
 }
 function toString(v) { return "[ " + v.x + ", " + v.y + ", " + v.z + " ]"; }

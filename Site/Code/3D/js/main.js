@@ -148,8 +148,8 @@ function onDocumentMouseMove( event ){
 	sprite1.position.set( event.clientX, event.clientY - 20, 0 );
 
 	// update the mouse variable
-	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+	mouse.x = ( event.clientX / SCREEN_WIDTH ) * 2 - 1;
+	mouse.y = - ( event.clientY / SCREEN_HEIGHT ) * 2 + 1;
 }
 
 function onDocumentMouseDown( event ){
@@ -160,8 +160,8 @@ function onDocumentMouseDown( event ){
 	console.log("Click.");
 
 	// update the mouse variable
-	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+	mouse.x = ( event.clientX / SCREEN_WIDTH ) * 2 - 1;
+	mouse.y = - ( event.clientY / SCREEN_HEIGHT ) * 2 + 1;
 
 	// find intersections
 

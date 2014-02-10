@@ -28,6 +28,19 @@ animate();
 
 /*** FONCTIONS ***/
 
+function unset(array, value){
+	var output=[];
+	var index = array.indexOf(value)
+	var j = 0;
+	for(var i in array){
+		if (i!=index){
+			output[j]=array[i];
+			j++;
+		}
+	}
+	return output;
+}
+
 function init(){
 
 	// scene
@@ -164,12 +177,25 @@ function onDocumentMouseDown( event ){
 	// if there is one (or more) intersections
 	if ( intersects.length > 0 ){
 		console.log("Hit @ " + toString( intersects[0].point ) );
-		// change the color of the closest face.
 		console.log(intersects[0].object.name);
+
 		intersects[ 0 ].object.material.color.setRGB( 0, 0, 0 );
 		intersects[ 0 ].object.geometry.colorsNeedUpdate = true;
-		selected.push(intersects[0].object);
-		// console.log(selected[0]); 
+		
+		var trouve = false;
+		for(var i=0;i<selected.length;i++)
+			if(intersects[0].object.name == selected[i].name)
+				trouve = true;
+
+		if(!trouve)
+			selected.push(intersects[0].object);
+		else
+			selected = unset(selected, intersects[0].object);
+
+		var str = "";
+		for(var i=0;i<selected.length;i++)
+			str += selected[i].name + "\n";
+		alert(str);	 
 	}
 }
 function toString(v) { return "[ " + v.x + ", " + v.y + ", " + v.z + " ]"; }

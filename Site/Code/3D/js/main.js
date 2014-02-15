@@ -106,7 +106,7 @@ function init(){
 	floor.position.set(0,-0.5,300);
 	floor.rotation.x = Math.PI / 2;
 	scene.add(floor);
-	fond.position.set(0,-420,300);
+	fond.position.set(0,-420,300);0
 	fond.rotation.x = Math.PI / 2;
 	scene.add(fond);
 	arriere.position.set(0,-210,0);
@@ -145,23 +145,23 @@ function onDocumentMouseMove( event ){
 	// event.preventDefault();
 
 	// update sprite position
-	sprite1.position.set( event.clientX, event.clientY - 20, 0 );
+	sprite1.position.set( event.clientX , event.clientY - 20, 0 );
 
 	// update the mouse variable
-	mouse.x = ( event.clientX / SCREEN_WIDTH ) * 2 - 1;
-	mouse.y = - ( event.clientY / SCREEN_HEIGHT ) * 2 + 1;
+	mouse.x = ( (event.clientX -50) / SCREEN_WIDTH ) * 2 - 1;
+	mouse.y = - ( (event.clientY -140) / SCREEN_HEIGHT ) * 2 + 1;
 }
 
 function onDocumentMouseDown( event ){
-	// the following line would stop any other event handler from firing
-	// (such as the mouse's TrackballControls)
-	// event.preventDefault();
+	var x = event.clientX;
+	var y = event.clientY;
 
-	console.log("Click.");
+	console.log("Click @ "+x+" , "+y);
 
 	// update the mouse variable
 	mouse.x = ( event.clientX / SCREEN_WIDTH ) * 2 - 1;
 	mouse.y = - ( event.clientY / SCREEN_HEIGHT ) * 2 + 1;
+	console.log("Click @ "+mouse.x+" , "+mouse.y);
 
 	// find intersections
 
@@ -195,7 +195,7 @@ function onDocumentMouseDown( event ){
 		var str = "";
 		for(var i=0;i<selected.length;i++)
 			str += selected[i].name + "\n";
-		alert(str);	 
+		// alert(str);	 
 	}
 }
 function toString(v) { return "[ " + v.x + ", " + v.y + ", " + v.z + " ]"; }

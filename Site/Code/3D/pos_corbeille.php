@@ -1,5 +1,5 @@
 <?php
-	require_once '../admin/ConnexionBD.php';
+	require_once 'admin/ConnexionBD.php';
 
 	global $connexion;
 	$stmt = $connexion -> prepare("SELECT * FROM Corbeille");

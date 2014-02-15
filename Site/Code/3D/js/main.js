@@ -50,8 +50,8 @@ function init(){
 
 	camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
 	scene.add(camera);
-	camera.position.set(0,800,1500);
-	camera.lookAt(scene.position);	
+	camera.position.set(15,-205,1880);
+	// camera.lookAt(camera.position);	
 
 	// renderer
 	if ( Detector.webgl )
@@ -131,7 +131,7 @@ function init(){
 	var spriteMaterial = new THREE.SpriteMaterial( { map: texture1, useScreenCoordinates: true, alignment: THREE.SpriteAlignment.topLeft } );
 	sprite1 = new THREE.Sprite( spriteMaterial );
 	sprite1.scale.set(200,100,1.0);
-	sprite1.position.set( 50, 50, 0 );
+	sprite1.position.set( 0, 0, 0 );
 	scene.add( sprite1 );	
 	//////////////////////////////////////////
 
@@ -209,6 +209,7 @@ function animate(){
 function update(){
 	// delta = change in time since last call (in seconds)
 	var delta = clock.getDelta(); 
+	// console.log("position : "+camera.position.x+","+camera.position.y+","+camera.position.z);
 
 	// create a Ray with origin at the mouse position
 	//   and direction into the scene (camera direction)

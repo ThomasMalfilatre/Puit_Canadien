@@ -50,8 +50,7 @@ function init(){
 
 	camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
 	scene.add(camera);
-	camera.position.set(15,-205,1880);
-	// camera.lookAt(camera.position);	
+	camera.position.set(30,310,1840);
 
 	// renderer
 	if ( Detector.webgl )
@@ -101,15 +100,14 @@ function init(){
 	var floor = new THREE.Mesh(floorGeometry, floorMaterial);
 	var fond = new THREE.Mesh(floorGeometry, floorMaterial);
 	var arriere = new THREE.Mesh(floorGeometryArr, floorMaterial);
-	floor.position.set(0,-0.5,300);
+	floor.position.set(0,420,300);
 	floor.rotation.x = Math.PI / 2;
 	scene.add(floor);
-	fond.position.set(0,-420,300);0
+	fond.position.set(0,0,300);0
 	fond.rotation.x = Math.PI / 2;
 	scene.add(fond);
-	arriere.position.set(0,-210,0);
+	arriere.position.set(0,210,0);
 	scene.add(arriere);
-
 
 	// initialize object to perform world/screen calculations
 	projector = new THREE.Projector();

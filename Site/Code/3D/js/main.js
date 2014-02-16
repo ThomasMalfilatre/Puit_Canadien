@@ -146,8 +146,8 @@ function onDocumentMouseMove( event ){
 function onDocumentMouseDown( event ){
 
 	// update the mouse variable
-	mouse.x = ( event.clientX / SCREEN_WIDTH ) * 2 - 1;
-	mouse.y = - ( event.clientY / SCREEN_HEIGHT ) * 2 + 1;
+	mouse.x = ( (event.clientX -50) / SCREEN_WIDTH ) * 2 - 1;
+	mouse.y = - ( (event.clientY -140) / SCREEN_HEIGHT ) * 2 + 1;
 
 	// find intersections
 
@@ -181,7 +181,7 @@ function onDocumentMouseDown( event ){
 		var str = "";
 		for(var i=0;i<selected.length;i++)
 			str += selected[i].name + "\n";
-		// alert(str);	 
+		alert(str);	 
 	}
 }
 function toString(v) { return "[ " + v.x + ", " + v.y + ", " + v.z + " ]"; }

@@ -15,7 +15,7 @@
 		<script src="scripts/THREE/THREEx.FullScreen.js"></script>
 		<script src="scripts/THREE/THREEx.WindowResize.js"></script>
 
-		<div id="container" style="z-index: 1; position: absolute; left:50px; right:50px; top:100px; bottom:100px"></div>
+		<div id="container" style="z-index: 1; position: absolute; left:300px; right:50px; top:100px; bottom:100px"></div>
 		<script src="3D/js/main.js"></script>
 		<script src="3D/js/placer_sonde.js"></script>
 		<script src="3D/js/placer_corbeille.js"></script>

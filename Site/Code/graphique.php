@@ -37,7 +37,7 @@
                 <div id="tabs-1">
                     <div id="ui">
                         <?php
-                            // include('block/body/form.php');  // liste deroulante selection des sondes
+                            include('block/body/form.php');  // liste deroulante sondes selectionne
                             include('block/body/graph.php'); // graphique
                             include('3D/terrain.php');
                         ?>

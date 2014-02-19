@@ -136,17 +136,17 @@ function init(){
 
 function onDocumentMouseMove( event ){
 	// update sprite position
-	sprite1.position.set( event.clientX -50 , event.clientY -140- 20, 0 );
+	sprite1.position.set( event.clientX -300 , event.clientY -140- 20, 0 );
 
 	// update the mouse variable
-	mouse.x = ( (event.clientX -50) / SCREEN_WIDTH ) * 2 - 1;
+	mouse.x = ( (event.clientX -300) / SCREEN_WIDTH ) * 2 - 1;
 	mouse.y = - ( (event.clientY -140) / SCREEN_HEIGHT ) * 2 + 1;
 }
 
 function onDocumentMouseDown( event ){
 
 	// update the mouse variable
-	mouse.x = ( (event.clientX -50) / SCREEN_WIDTH ) * 2 - 1;
+	mouse.x = ( (event.clientX -300) / SCREEN_WIDTH ) * 2 - 1;
 	mouse.y = - ( (event.clientY -140) / SCREEN_HEIGHT ) * 2 + 1;
 
 	// find intersections
@@ -181,9 +181,17 @@ function onDocumentMouseDown( event ){
 		var str = "";
 		for(var i=0;i<selected.length;i++)
 			str += selected[i].name + "\n";
-		alert(str);	 
+		// alert(str);	 
 	}
 }
+
+function listeSondes(){
+	var str = "";
+	for(var i=0;i<selected.length;i++)
+		str += selected[i].name + "\n";
+	return str;	
+}
+
 function toString(v) { return "[ " + v.x + ", " + v.y + ", " + v.z + " ]"; }
 
 function animate(){

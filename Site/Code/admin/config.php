@@ -1,7 +1,6 @@
 <?php
-    define('HOST', 'info2');
-    define('USER', 'malfilatre');
-    define('PASS', 'malfilatre');
-    define('BASE', 'Bmalfilatre');
+    define('HOST', 'localhost');
+    define('USER', 'root');
+    define('PASS', '29061994th');
+    define('BASE', 'projet_tutore');
 ?>
-

@@ -23,6 +23,8 @@
 				echo " <script> placer_sonde('".$nom."',".$x.",".$y.",".$z.",255,255,0); </script>";
 			elseif($nom[0] == 'R')
 				echo " <script> placer_sonde('".$nom."',".$x.",".$y.",".$z.",125,125,125); </script>";
+			elseif($nom[0] == 'T')
+				echo " <script> placer_sonde('".$nom."',".$x.",".$y.",".$z.",0,0,0); </script>";
 		}
 	}	
 ?>

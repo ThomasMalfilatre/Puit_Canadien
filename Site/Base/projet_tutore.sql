@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Dim 16 Février 2014 à 21:02
+-- Généré le: Mer 19 Février 2014 à 23:57
 -- Version du serveur: 5.5.35-0ubuntu0.13.10.2
 -- Version de PHP: 5.5.3-1ubuntu2.1
 
@@ -192,16 +192,16 @@ INSERT INTO `Sonde` (`Sonde_id`, `Nom`, `Niveau`, `posX`, `posY`, `posZ`) VALUES
 (27, 'REF-3.5', 3.5, 225, 70, 435),
 (28, 'REF-4', 4, 225, 20, 435),
 (29, 'Air_exterieur', 0, 0, 0, 0),
-(30, 'Air_sortie_PC', 0, 0, 0, 0),
-(31, 'Tube 24m', 2, 0, 0, 0),
-(32, 'Tube 18m', 2, 0, 0, 0),
-(33, 'Tube 12m', 2, 0, 0, 0),
-(34, 'Tube 6m', 2, 0, 0, 0),
+(30, 'Air_sortie_PC', 0, -850, 480, 550),
+(31, 'Tube 24m', 2, -494, 50, 550),
+(32, 'Tube 18m', 2, -158, 140, 550),
+(33, 'Tube 12m', 2, 178, 220, 550),
+(34, 'Tube 6m', 2, 515, 300, 550),
 (35, 'Extraction', 0, 0, 0, 0),
 (36, 'Insufflation', 0, 0, 0, 0),
 (37, 'Rejet', 0, 0, 0, 0),
 (38, 'Air neuf', 0, 0, 0, 0),
-(39, 'Air entree pc', 0, 0, 0, 0);
+(39, 'Air entree pc', 0, 850, 480, 550);
 
 -- --------------------------------------------------------
 

@@ -180,8 +180,12 @@ function onDocumentMouseDown( event ){
 
 		var str = "";
 		for(var i=0;i<selected.length;i++)
-			str += selected[i].name + "\n";
-		// alert(str);	 
+			str += selected[i].name + "<br />";
+		// alert(str);
+
+		var liste = document.getElementById( 'baseSondes' );
+		// liste.write(str);
+		document.getElementById('baseSondes').innerHTML = str;
 	}
 }
 

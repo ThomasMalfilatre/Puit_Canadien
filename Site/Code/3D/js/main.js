@@ -7,8 +7,8 @@ var keyboard = new THREEx.KeyboardState();
 var clock = new THREE.Clock();
 var cube;
 
-var SCREEN_WIDTH = window.innerWidth;
-var SCREEN_HEIGHT = window.innerHeight; 
+var SCREEN_WIDTH = window.innerWidth - 350;
+var SCREEN_HEIGHT = window.innerHeight - 200; 
 var VIEW_ANGLE = 45;
 var ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT;
 var NEAR = 0.1;
@@ -50,7 +50,7 @@ function init(){
 
 	camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
 	scene.add(camera);
-	camera.position.set(30,310,1840);
+	camera.position.set(0,800,1800);
 
 	// renderer
 	if ( Detector.webgl )
@@ -90,10 +90,9 @@ function init(){
 
 	//axes
 	var axes = new THREE.AxisHelper(500);
-	scene.add( axes );
+	// scene.add( axes );
 
 	// sol
-
 	var floorMaterial = new THREE.MeshBasicMaterial({color:"rgb(139,105,20)", side: THREE.DoubleSide});
 	var floorGeometry = new THREE.PlaneGeometry(1800, 600, 1, 1);
 	var floorGeometryArr = new THREE.PlaneGeometry(1800, 420, 1, 1);
@@ -207,7 +206,7 @@ function animate(){
 function update(){
 	// delta = change in time since last call (in seconds)
 	var delta = clock.getDelta(); 
-	// console.log("position : "+camera.position.x+","+camera.position.y+","+camera.position.z);
+	//console.log("position : "+camera.position.x+","+camera.position.y+","+camera.position.z);
 
 	// create a Ray with origin at the mouse position
 	//   and direction into the scene (camera direction)

@@ -11,8 +11,12 @@
 		$z = $q['posZ'];
 		$nom = $q['Nom'];
 		if($x != 0){
-			if($nom[0] == 'A')
-				echo " <script> placer_sonde('".$nom."',".$x.",".$y.",".$z.",255,0,0); </script>";
+			if($nom[0] == 'A'){
+				if($nom[1] == 'i')
+					echo " <script> placer_sonde('".$nom."',".$x.",".$y.",".$z.",255,255,255); </script>";
+				else
+					echo " <script> placer_sonde('".$nom."',".$x.",".$y.",".$z.",255,0,0); </script>";
+			}	
 			elseif($nom[0] == 'B')
 				echo " <script> placer_sonde('".$nom."',".$x.",".$y.",".$z.",0,255,0); </script>";
 			elseif($nom[0] == 'C')	

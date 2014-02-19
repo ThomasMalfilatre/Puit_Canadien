@@ -1,7 +1,7 @@
 function placer_puit(){
 
 	var sphereGeometry = new THREE.SphereGeometry( 10, 32, 16 ); 	
-	var mat = new THREE.MeshBasicMaterial( {color: "rgb(0,0,0)", wireframe:true} );
+	var mat = new THREE.MeshBasicMaterial( {color: "rgb(0,0,0)", wireframe:false} );
 	var mesh = new THREE.Mesh(sphereGeometry, mat);
 	var mesh1 = new THREE.Mesh(sphereGeometry, mat);
 	var mesh2 = new THREE.Mesh(sphereGeometry, mat);
@@ -15,11 +15,11 @@ function placer_puit(){
 	scene.add(mesh1);
 	scene.add(mesh2);
 
-	var Geo = new THREE.CylinderGeometry(10, 10, 200, 8, 1, true); 
-	var Geo2 = new THREE.CylinderGeometry(10, 10, 1395, 8, 1, true); 
-	var Geo3 = new THREE.CylinderGeometry(10, 10, 495, 8, 1, true); 
+	var Geo = new THREE.CylinderGeometry(10, 10, 100, 8, 1, false); 
+	var Geo2 = new THREE.CylinderGeometry(10, 10, 1395, 8, 1, false); 
+	var Geo3 = new THREE.CylinderGeometry(10, 10, 495, 8, 1, false); 
 	var p = new THREE.Mesh(Geo, mat);
-	p.position.set(850,470,550);
+	p.position.set(850,420,550);
 	p.name = "Puit Canadien";
 	scene.add(p);
 	var p1 = new THREE.Mesh(Geo2, mat);
@@ -33,7 +33,7 @@ function placer_puit(){
 	p2.name = "Puit Canadien";
 	scene.add(p2);
 	var p3 = new THREE.Mesh(Geo, mat);
-	p3.position.set(-850,470,550);
+	p3.position.set(-850,420,550);
 	p3.name = "Puit Canadien";
 	scene.add(p3);
 }

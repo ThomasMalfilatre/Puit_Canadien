@@ -29,9 +29,9 @@
 	<br />
 	<script>
 		$(function() {
-			$( "#datepicker" ).datepicker();
+			$( "#datepicker2" ).datepicker();
 		});
 	</script>
-	<input type="text" name="datefin" id="datepicker"/>
+	<input type="text" name="datefin" id="datepicker2"/>
 </form>
 

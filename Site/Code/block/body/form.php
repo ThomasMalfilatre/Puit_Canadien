@@ -1,4 +1,4 @@
-<form>
+<form name="sondeSel" action="scripts/highcharts/graph.php" method="post">
 	<br />
 	<br />
 
@@ -33,5 +33,8 @@
 		});
 	</script>
 	<input type="text" name="datefin" id="datepicker2"/>
+	<br />
+	<br />
+	<input type="submit" name="button-graph" value="Générer graphe" />
 </form>
 

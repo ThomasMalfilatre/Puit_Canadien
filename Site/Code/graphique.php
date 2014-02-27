@@ -10,9 +10,6 @@
         <link rel='stylesheet' type='text/css' href='css/graphique.css' />
         <link rel="stylesheet" href="css/jquery-ui.css" />
         
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script src="http://code.highcharts.com/highcharts.js"></script>
-        
         <script src="scripts/jquery/jquery-1.9.1.min.js"></script>
         <script src="scripts/jquery/jquery-ui.js"></script>
         <script src="scripts/jquery/jquery-ui-i18n.min.js"></script>
@@ -40,13 +37,12 @@
                     <div id="ui">
                         <?php
                             include('block/body/form.php');  // liste deroulante sondes selectionne
-                            include('block/body/graph.php'); // graphique
                             include('3D/terrain.php');
                         ?>
                     </div>
                 </div>
                 <div id="tabs-2">
-                    <div id="graphe" style="width:100%; height:400px;"></div>
+                    <!--<?php //include('scripts/highcharts/graph.php'); ?>-->
                 </div> 
                 <div id="tabs-3">
                     <img src="data/sondes.png" alt="Positions des sondes" width="800px" height="400px"/>

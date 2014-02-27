@@ -5,12 +5,14 @@
         <?php
             include('block/head/head.php');
             include("admin/ConnexionBD.php");
-            // include("scripts/chartScript.php"); // utilisation de highcharts
         ?>
 
         <link rel='stylesheet' type='text/css' href='css/graphique.css' />
         <link rel="stylesheet" href="css/jquery-ui.css" />
-    
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        
         <script src="scripts/jquery/jquery-1.9.1.min.js"></script>
         <script src="scripts/jquery/jquery-ui.js"></script>
         <script src="scripts/jquery/jquery-ui-i18n.min.js"></script>
@@ -30,8 +32,8 @@
         <div id='contenu'>
             <div id="tabs">
                 <ul>
-                    <li><a href="#tabs-1">Température des sondes</a></li>
-                    <!-- <li><a href="#tabs-2">Température par profondeur des sondes</a></li> -->
+                    <li><a href="#tabs-1">Sélection des sondes</a></li>
+                    <li><a href="#tabs-2">Graphique</a></li>
                     <li><a href="#tabs-3">Position des sondes</a></li>
                 </ul>
                 <div id="tabs-1">
@@ -44,6 +46,7 @@
                     </div>
                 </div>
                 <div id="tabs-2">
+                    <div id="graphe" style="width:100%; height:400px;"></div>
                 </div> 
                 <div id="tabs-3">
                     <img src="data/sondes.png" alt="Positions des sondes" width="800px" height="400px"/>

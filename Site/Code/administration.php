@@ -126,7 +126,7 @@
 									</tr>
 									<tr>
 										<td>
-											<label for="niveau">Niveau : </label>
+											<label for="niveau">Niveau (position y) : </label>
 										</td>
 										<td>
 											<select name="niveau">
@@ -135,6 +135,22 @@
 												<option value="2.5">2.5</option>
 												<option value="4">4</option>
 										</td>	
+									</tr>
+									<tr>
+										<td>
+											<label for="posx"> Position x :</label>
+										</td>
+										<td>
+											<input type="text" name="posx" id="posx" size="30" maxlength="4" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="posz"> Position z :</label>
+										</td>
+										<td>
+											<input type="text" name="posz" id="posz" size="30" maxlength="4" />
+										</td>
 									</tr>
 									<tr>
 										<td colspan="2">
@@ -157,6 +173,22 @@
 										</td>
 										<td>
 											<input type="text" name="nom" id="nom" size="30" maxlength="10" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="posx"> Position x :</label>
+										</td>
+										<td>
+											<input type="text" name="posx" id="posx" size="30" maxlength="4" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="posz"> Position z :</label>
+										</td>
+										<td>
+											<input type="text" name="posz" id="posz" size="30" maxlength="4" />
 										</td>
 									</tr>
 									<tr>

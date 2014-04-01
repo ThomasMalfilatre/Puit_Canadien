@@ -25,11 +25,22 @@
         return $result;
     }
 
-    function AjouterSonde($nom, $niveau){
+    function AjouterSonde($nom, $niveau, $x, $z){
         global $connexion;
-        $result = $connexion -> prepare("INSERT INTO Sonde VALUES (NULL, :nom, :niveau)");
+
+        if($niveau == 1)
+            $y = 320;
+        if($niveau == 2.5)
+            $y = 170;
+        if($niveau == 4)
+            $y = 20;
+
+        $result = $connexion -> prepare("INSERT INTO Sonde VALUES (NULL, :nom, :niveau, :x, :y, :z)");
         $result -> bindParam(':nom', $nom);
         $result -> bindParam(':niveau', $niveau);
+        $result -> bindParam(':x', $x);
+        $result -> bindParam(':y', $y);
+        $result -> bindParam(':z', $z);
         $result -> execute();
     }
 
@@ -95,14 +106,12 @@
         $result -> execute();
     }
 
-    function AjouterCorbeille($nom){
-        global $connexion;
-        $pos = "position";
-        $zone = "zone";
-        $result = $connexion -> prepare("INSERT INTO Corbeille VALUES(NULL, :nom, :pos ,0,0, :z)");
+    function AjouterCorbeille($nom, $posX, $posZ){
+        global $connexion;        
+        $result = $connexion -> prepare("INSERT INTO Corbeille VALUES(NULL, :nom, :posX , 210 , :posZ )");
         $result -> bindParam(':nom', $nom);
-        $result -> bindParam(':pos', $pos);
-        $result -> bindParam(':z', $zone);
+        $result -> bindParam(':posX', $posX);
+        $result -> bindParam(':posZ', $posZ);
         $result -> execute();
     }
 

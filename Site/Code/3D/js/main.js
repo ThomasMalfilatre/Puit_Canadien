@@ -1,5 +1,7 @@
 /*** MAIN ***/
 
+/* http://www.alsacreations.com/tuto/lire/1572-webgl-3d-three-canvas-threejs.html */
+
 // declaration des variable globale
 
 var container, scene, camera, renderer, controls, stats;
@@ -50,7 +52,7 @@ function init(){
 
 	camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
 	scene.add(camera);
-	camera.position.set(0,800,1800);
+	camera.position.set(0,800,2800);
 
 	// renderer
 	if ( Detector.webgl )
@@ -90,27 +92,69 @@ function init(){
 
 	//axes
 	var axes = new THREE.AxisHelper(500);
-	// scene.add( axes );
+	scene.add( axes );
+
+	var floorGeometryArr = new THREE.PlaneGeometry(1800, 420, 1, 1);
+	var floorGeometry = new THREE.PlaneGeometry(1800, 600, 1, 1);
+	var wallGeometry = new THREE.PlaneGeometry(600, 420,1,1);
+	
+	/* B32 */
+	var textureB32 = THREE.ImageUtils.loadTexture('3D/js/texture/B32.jpg');
+	textureB32.wrapS = textureB32.wrapT = THREE.RepeatWrapping;
+	var B32Material = new THREE.MeshBasicMaterial({map: textureB32 , side: THREE.DoubleSide});
+	var B32Geometry = new THREE.PlaneGeometry(1800, 420, 1, 1);
+	var B32 = new THREE.Mesh(B32Geometry, B32Material);
+	B32.position.set(0,630,0);
+	scene.add(B32);
+	
+	/* CAFET */
+	var textureCafet = THREE.ImageUtils.loadTexture('3D/js/texture/Cafet.jpg');
+	textureCafet.wrapS = textureCafet.wrapT = THREE.RepeatWrapping;
+	var CafetMaterial = new THREE.MeshBasicMaterial({map: textureCafet , side: THREE.DoubleSide});
+	var CafetGeometry = new THREE.PlaneGeometry(600, 420,1,1);
+	var Cafet = new THREE.Mesh(CafetGeometry, CafetMaterial);
+	Cafet.position.set(900,630,300);
+	Cafet.rotation.y = - Math.PI /2;
+	// Cafet.rotation.z = Math.PI;
+	scene.add(Cafet);
+	
+	/* GTE */
+	var textureGTE = THREE.ImageUtils.loadTexture('3D/js/texture/GTE.jpg');
+	textureGTE.wrapS = textureGTE.wrapT = THREE.RepeatWrapping;
+	var GTEMaterial = new THREE.MeshBasicMaterial({map: textureGTE , side: THREE.DoubleSide});
+	var GTEGeometry = new THREE.PlaneGeometry(600, 420,1,1);
+	var GTE = new THREE.Mesh(GTEGeometry, GTEMaterial);
+	GTE.position.set(-900,630,300);
+	GTE.rotation.y = Math.PI /2;
+	scene.add(GTE);	
 
 	// sol
-	var floorMaterial = new THREE.MeshBasicMaterial({color:"rgb(139,105,20)", side: THREE.DoubleSide});
-	var floorGeometry = new THREE.PlaneGeometry(1800, 600, 1, 1);
-	var floorGeometryArr = new THREE.PlaneGeometry(1800, 420, 1, 1);
-	var floor = new THREE.Mesh(floorGeometry, floorMaterial);
+	var groundMaterial = new THREE.MeshBasicMaterial({color:"rgb(127,221,76)", side: THREE.DoubleSide}); //vert
+	var floorMaterial = new THREE.MeshBasicMaterial({color:"rgb(139,105,20)", side: THREE.DoubleSide}); //marron
+	var floor = new THREE.Mesh(floorGeometry, groundMaterial);
 	var fond = new THREE.Mesh(floorGeometry, floorMaterial);
 	var arriere = new THREE.Mesh(floorGeometryArr, floorMaterial);
+	
+	
 	floor.position.set(0,420,300);
 	floor.rotation.x = Math.PI / 2;
 	scene.add(floor);
+	
 	fond.position.set(0,0,300);0
 	fond.rotation.x = Math.PI / 2;
 	scene.add(fond);
+	
 	arriere.position.set(0,210,0);
 	scene.add(arriere);
+	
+
+
+	
 
 	// initialize object to perform world/screen calculations
 	projector = new THREE.Projector();
 	document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+	
 	/////// draw text on canvas /////////
 	// create a canvas element
 	canvas1 = document.createElement('canvas');
@@ -118,16 +162,17 @@ function init(){
 	context1.font = "Bold 20px Arial";
 	context1.fillStyle = "rgba(0,0,0,0.95)";
     context1.fillText('Hello, world!', 0, 20);
+    
 	// canvas contents will be used for a texture
 	texture1 = new THREE.Texture(canvas1) 
 	texture1.needsUpdate = true;
-	////////////////////////////////////////
+	
 	var spriteMaterial = new THREE.SpriteMaterial( { map: texture1, useScreenCoordinates: true, alignment: THREE.SpriteAlignment.topLeft } );
 	sprite1 = new THREE.Sprite( spriteMaterial );
 	sprite1.scale.set(200,100,1.0);
+	
 	sprite1.position.set( 0, 0, 0 );
 	scene.add( sprite1 );	
-	//////////////////////////////////////////
 
 	projector2 = new THREE.Projector();
 	document.addEventListener( 'mousedown', onDocumentMouseDown, false);

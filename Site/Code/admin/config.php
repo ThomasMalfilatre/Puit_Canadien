@@ -1,6 +1,6 @@
 <?php
-    define('HOST', 'localhost');
-    define('USER', 'root');
-    define('PASS', '29061994th');
-    define('BASE', 'projet_tutore');
+    define('HOST', 'info2');
+    define('USER', 'gelot');
+    define('PASS', 'gelot');
+    define('BASE', 'DBgelot');
 ?>

@@ -19,7 +19,7 @@ var FAR = 20000;
 var projector, projector2, mouse = { x: 0, y: 0 }, INTERSECTED;
 var sprite1;
 var canvas1, context1, texture1;
-var targetList = []; // liste des selectionnable
+var targetList = []; // liste des sondes selectionnable
 var selected = []; // liste des sondes selectionne
 
 /*** INITIALISATION ***/

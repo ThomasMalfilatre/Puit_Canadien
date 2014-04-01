@@ -12,7 +12,7 @@
 	<br />
 	<br />
 	
-	<script src="scripts/jquery/jquery-1.9.1.js"></script>
+	<script src="scripts/jquery/jquery-1.91.js"></script>
 	<script src="scripts/jquery/jquery-ui.js"></script>
 	<label>Date de début</label>
 	<script>

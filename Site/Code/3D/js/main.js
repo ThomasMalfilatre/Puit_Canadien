@@ -92,7 +92,7 @@ function init(){
 
 	//axes
 	var axes = new THREE.AxisHelper(500);
-	scene.add( axes );
+	// scene.add( axes );
 
 	var floorGeometryArr = new THREE.PlaneGeometry(1800, 420, 1, 1);
 	var floorGeometry = new THREE.PlaneGeometry(1800, 600, 1, 1);
@@ -129,25 +129,43 @@ function init(){
 	scene.add(GTE);	
 
 	// sol
-	var groundMaterial = new THREE.MeshBasicMaterial({color:"rgb(127,221,76)", side: THREE.DoubleSide}); //vert
+	var groundMaterial = new THREE.MeshBasicMaterial({color:"rgb(127,221,76)", side: THREE.DoubleSide, transparent: true, opacity: 0.5}); //vert
 	var floorMaterial = new THREE.MeshBasicMaterial({color:"rgb(139,105,20)", side: THREE.DoubleSide}); //marron
+	var floorTransMaterial = new THREE.MeshBasicMaterial({color:"rgb(139,105,20)", transparent: true, opacity: 0.5 , side: THREE.DoubleSide}); //marron transparent
 	var floor = new THREE.Mesh(floorGeometry, groundMaterial);
 	var fond = new THREE.Mesh(floorGeometry, floorMaterial);
 	var arriere = new THREE.Mesh(floorGeometryArr, floorMaterial);
-	
-	
 	floor.position.set(0,420,300);
 	floor.rotation.x = Math.PI / 2;
 	scene.add(floor);
-	
 	fond.position.set(0,0,300);0
 	fond.rotation.x = Math.PI / 2;
 	scene.add(fond);
-	
 	arriere.position.set(0,210,0);
 	scene.add(arriere);
-	
 
+	var gauche = new THREE.Mesh(wallGeometry, floorTransMaterial);
+	gauche.position.set(-900,210,300);
+	gauche.rotation.y = Math.PI /2;
+	scene.add(gauche);
+	
+	var droite = new THREE.Mesh(wallGeometry, floorTransMaterial);
+	droite.position.set(900,210,300);
+	droite.rotation.y = Math.PI /2;
+	scene.add(droite);
+
+
+	
+	var Geo = new THREE.CylinderGeometry(6, 6, 420, 8, 1, true); 
+	var Mat = new THREE.MeshBasicMaterial({color:"rgb(0,0,0)",wireframe:false})
+	var coin = new THREE.Mesh(Geo, Mat);
+	coin.position.x = 900;
+	coin.position.y = 620;
+	scene.add(coin);
+	var coin2 = new THREE.Mesh(Geo, Mat);
+	coin2.position.x = -900;
+	coin2.position.y = 620;
+	scene.add(coin2);
 
 	
 

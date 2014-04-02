@@ -1,0 +1,69 @@
+\relax 
+\catcode`:\active
+\catcode`;\active
+\catcode`!\active
+\catcode`?\active
+\select@language{french}
+\@writefile{toc}{\select@language{french}}
+\@writefile{lof}{\select@language{french}}
+\@writefile{lot}{\select@language{french}}
+\@writefile{toc}{\contentsline {paragraph}{Avant de commencer ce rapport nous tenions \IeC {\`a} remercier Monsieur Escot ainsi que Monsieur Jubertie pour leur soutien qu'ils nous ont apport\IeC {\'e}. En effet les diff\IeC {\'e}rentes r\IeC {\'e}unions organis\IeC {\'e}es nous ont permis de mieux comprendre le fonctionnement du projet.}{1}}
+\@writefile{toc}{\contentsline {paragraph}{Ce projet a eu un impact sur notre fin de formation. Il a permis la jonction entre l'IUT et la vie professionnelle en y ayant acquis un v\IeC {\'e}ritable sens coop\IeC {\'e}ratif afin de mieux nous ins\IeC {\'e}rer au sein d'un stage en entreprise.}{1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {paragraph}{ L'ann\IeC {\'e}e derni\IeC {\`e}re le projet du puits canadien avait \IeC {\'e}t\IeC {\'e} confi\IeC {\'e} \IeC {\`a} des \IeC {\'e}tudiants pour permettre une r\IeC {\'e}cup\IeC {\'e}ration des donn\IeC {\'e}es via une carte Arduino pour les mettre sur un site internet. }{3}}
+\@writefile{toc}{\contentsline {paragraph}{ Pour cette ann\IeC {\'e}e, les professeurs voulaient d\IeC {\'e}sormais un site internet avec une repr\IeC {\'e}sentation du puits canadien en 3D, plut\IeC {\^o}t que le 2D qui \IeC {\'e}tait peu intuitif, pour pouvoir se rep\IeC {\'e}rer et se d\IeC {\'e}placer dans le puits canadien.}{3}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous nous sommes donc concentr\IeC {\'e}s sur cette repr\IeC {\'e}sentation 3D et avons laiss\IeC {\'e} de c\IeC {\^o}t\IeC {\'e} la partie Arduino qui \IeC {\'e}tait plut\IeC {\^o}t secondaire et d\IeC {\'e}j\IeC {\`a} r\IeC {\'e}alis\IeC {\'e} l'ann\IeC {\'e}e derni\IeC {\`e}re.}{3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Le site internet}{4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Choix des biblioth\IeC {\`e}ques}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Pour la 3D}{4}}
+\@writefile{toc}{\contentsline {paragraph}{Pour r\IeC {\'e}aliser la mod\IeC {\'e}lisation 3D du puits canadien, nous avons d\IeC {\'e}cid\IeC {\'e} d'utiliser la biblioth\IeC {\`e}que THREE.JS, qui est simple d'utilisation et permet de faire plusieurs mod\IeC {\`e}les en 3D.}{4}}
+\@writefile{toc}{\contentsline {paragraph}{ Cette biblioth\IeC {\`e}que nous a donc permis de cr\IeC {\'e}er le puits canadien et d'y ajouter les sondes pour mieux comprendre leurs emplacements. On peut \IeC {\'e}galement zoomer,d\IeC {\'e}zoomer, faire pivoter le puits gr\IeC {\^a}ce \IeC {\`a} l'impl\IeC {\'e}mentation de THREE.JS. }{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Pour les graphes}{5}}
+\@writefile{toc}{\contentsline {paragraph}{ En ce qui concerne le graphe pour r\IeC {\'e}cup\IeC {\'e}rer les temp\IeC {\'e}ratures et autres donn\IeC {\'e}es, nous avons utilis\IeC {\'e} la biblioth\IeC {\`e}que d\IeC {\'e}j\IeC {\`a} pr\IeC {\'e}sente "HIGHCHARTS". }{5}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons d\IeC {\'e}cid\IeC {\'e} de garder HIGHCHARTS car cette biblioth\IeC {\`e}que \IeC {\'e}tait d\IeC {\'e}j\IeC {\`a} impl\IeC {\'e}ment\IeC {\'e}e et elle permet de r\IeC {\'e}aliser des graphes de qualit\IeC {\'e}s.}{5}}
+\@writefile{toc}{\contentsline {paragraph}{ Cette biblioth\IeC {\`e}que nous permet aussi de zoomer sur une partie de graphe. On peut \IeC {\'e}galement facilement le graphe en diff\IeC {\'e}rents formats (PNG,JPEG,PDF ou SVG).}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}L'impl\IeC {\'e}mentation de THREE.JS}{6}}
+\@writefile{toc}{\contentsline {paragraph}{ Etant donn\IeC {\'e} qu'HIGHCHARTS \IeC {\'e}tait d\IeC {\'e}j\IeC {\`a} impl\IeC {\'e}ment\IeC {\'e}e, l\IeC {\textquoteright }impl\IeC {\'e}mentation de Three a \IeC {\'e}t\IeC {\'e} plut\IeC {\^o}t simple \IeC {\`a} r\IeC {\'e}aliser. Three \IeC {\'e}tant aussi une biblioth\IeC {\`e}que javascript comme HIGHCHARTS, il a fallu r\IeC {\'e}aliser le transfert de donn\IeC {\'e}es javascript en php.}{6}}
+\@writefile{toc}{\contentsline {paragraph}{Le php permet d\IeC {\textquoteright }\IeC {\'e}tablir la connexion avec la base de donn\IeC {\'e}es et ainsi pouvoir r\IeC {\'e}cup\IeC {\'e}rer toutes les donn\IeC {\'e}es n\IeC {\'e}cessaires \IeC {\`a} afficher. Nous avons donc eu donc quelques difficult\IeC {\'e}s \IeC {\`a} faire passer le javascript en php.}{6}}
+\@writefile{toc}{\contentsline {paragraph}{Cela nous a pos\IeC {\'e} des probl\IeC {\`e}mes, notamment pour le passage au niveau du graphe des temp\IeC {\'e}ratures mais nous avons finalement trouv\IeC {\'e} la solution.}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Disposition des menus}{6}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons d\IeC {\'e}cid\IeC {\'e} de laisser le site s\IeC {\'e}par\IeC {\'e} en trois parties en op\IeC {\'e}rant quelques changements: }{6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}La base de donn\IeC {\'e}es}{7}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Ajout de propri\IeC {\'e}t\IeC {\'e}s}{7}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons repris la m\IeC {\^e}me base de donn\IeC {\'e}es du projet de l'ann\IeC {\'e}e derni\IeC {\`e}re, cependant nous avons rajout\IeC {\'e} diff\IeC {\'e}rentes propri\IeC {\'e}t\IeC {\'e}s demand\IeC {\'e}s par Mr Escot.}{7}}
+\@writefile{toc}{\contentsline {paragraph}{ Ces ajouts de propri\IeC {\'e}t\IeC {\'e}s nous ont donc permis de mieux g\IeC {\'e}rer la base de donn\IeC {\'e}es et ainsi les diff\IeC {\'e}rents graphes. }{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Administration}{7}}
+\@writefile{toc}{\contentsline {paragraph}{En ce qui concerne la partie Administration du site internet, il faut y rentrer \IeC {\`a} l'aide d'un mot de passe pr\IeC {\'e}d\IeC {\'e}fini. Ensuite, on peut ajouter ou supprimer tous types d'\IeC {\'e}l\IeC {\'e}ments en s\IeC {\'e}lectionnant le menu que l'on souhaite. L'\IeC {\'e}l\IeC {\'e}ment sera automatiquement ajout\IeC {\'e} dans la base de donn\IeC {\'e}es et affich\IeC {\'e} sur la repr\IeC {\'e}sentation 3D du puits canadien.}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Import/Export}{8}}
+\@writefile{toc}{\contentsline {paragraph}{ Gr\IeC {\^a}ce \IeC {\`a} l'onglet d'import/export, il est possible de sauvegarder les donn\IeC {\'e}es par l'export, dans un fichier. La base de donn\IeC {\'e}es actuelle enregistr\IeC {\'e}e est sauvegard\IeC {\'e}e sous un format SQL.}{8}}
+\@writefile{toc}{\contentsline {paragraph}{ Par ailleurs, l'import permettra l'initialisation de la base de donn\IeC {\'e}e \IeC {\`a} un \IeC {\'e}tat pr\IeC {\'e}alable. C'est \IeC {\`a} dire que nous pouvons mettre la base de donn\IeC {\'e}es \IeC {\`a} l'\IeC {\'e}gale d'une ancienne version export\IeC {\'e}e.}{8}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Organisation}{9}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Historique et r\IeC {\'e}partition des t\IeC {\^a}ches}{9}}
+\@writefile{toc}{\contentsline {paragraph}{\relax $\@@underline {\hbox {Janvier:}}\mathsurround \z@ $\relax }{9}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons rendez-vous avec Sylvain Jubertie et Pablo Escot pour avoir le sujet complet et d\IeC {\'e}taill\IeC {\'e} de notre projet.}{9}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous devons donc reprendre le sujet de l'ann\IeC {\'e}e derni\IeC {\`e}re qui permettait d'avoir un puits canadien en 2D pour le transformer en une mod\IeC {\'e}lisation 3D qui permettra de mieux g\IeC {\'e}rer la r\IeC {\'e}partition des sondes ainsi que des corbeilles. Nous pourrons ainsi s\IeC {\'e}lectionner une ou plusieurs sondes et afficher leurs graphes en fonction des donn\IeC {\'e}es pr\IeC {\'e}sentes dans la base de don\IeC {\'e}nes.}{9}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous devions aussi r\IeC {\'e}am\IeC {\'e}nager la base de donn\IeC {\'e}es pour stocker diff\IeC {\'e}rentes informations, qui n'\IeC {\'e}taient pas encore impl\IeC {\'e}ment\IeC {\'e}es, et demand\IeC {\'e}es par Mr Escot.}{9}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous devions \IeC {\'e}galement pr\IeC {\'e}senter un graphique des temp\IeC {\'e}ratures des sondes s\IeC {\'e}lectionn\IeC {\'e}es au pr\IeC {\'e}alable sur la mod\IeC {\'e}lisation 3D.}{9}}
+\@writefile{toc}{\contentsline {paragraph}{\relax $\@@underline {\hbox {Fevrier:}}\mathsurround \z@ $\relax }{9}}
+\@writefile{toc}{\contentsline {paragraph}{ Tout d'abord, nous avons trouv\IeC {\'e} une biblioth\IeC {\`e}que THREE.JS qui nous permettait de r\IeC {\'e}aliser plusieurs mod\IeC {\`e}les en 3D, et qui semblait plut\IeC {\^o}t simple d'utilisation.}{9}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons eu une r\IeC {\'e}union en fin de mois, pour parler de cette biblioth\IeC {\`e}que et montrer aux deux enseignants ce qu'on pouvait r\IeC {\'e}aliser gr\IeC {\^a}ce \IeC {\`a} cette biblioth\IeC {\`e}que THREE. Cette r\IeC {\'e}union nous a \IeC {\'e}galement permis de mieux comprendre comment devait \IeC {\^e}tre la base de donn\IeC {\'e}es et les modifications \IeC {\`a} y apporter.}{10}}
+\@writefile{toc}{\contentsline {paragraph}{ Il nous est \IeC {\'e}galement demand\IeC {\'e} de r\IeC {\'e}aliser diff\IeC {\'e}rentes fonctions au niveau du graphe :}{10}}
+\@writefile{toc}{\contentsline {paragraph}{\relax $\@@underline {\hbox {Mars :}}\mathsurround \z@ $\relax }{10}}
+\@writefile{toc}{\contentsline {paragraph}{ Durant ce mois, nous avons r\IeC {\'e}alis\IeC {\'e} la mod\IeC {\'e}lisation 3D du puits canadien sur le site internet, tout en changeant les donn\IeC {\'e}es de la base de donn\IeC {\'e}es, notamment pour pouvoir positionner les sondes et les corbeilles en accord avec le puits canadien.}{10}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons aussi modifi\IeC {\'e} la base de donn\IeC {\'e}es pour y inclure les bonnes propri\IeC {\'e}t\IeC {\'e}s et ajouter celles permettant de les placer correctement dans le mod\IeC {\`e}le.}{10}}
+\@writefile{toc}{\contentsline {paragraph}{\relax $\@@underline {\hbox {Avril :}}\mathsurround \z@ $\relax }{10}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons finalis\IeC {\'e} le mod\IeC {\`e}le 3D du puits canadien, notamment au niveau graphique. La repr\IeC {\'e}sentation du terrain ainsi que des salles aux alentours est d\IeC {\'e}sormais pr\IeC {\'e}sente.}{10}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons \IeC {\'e}galement implant\IeC {\'e} la g\IeC {\'e}n\IeC {\'e}ration du graphe des temp\IeC {\'e}ratures en fonction des sondes et des dates s\IeC {\'e}lectionn\IeC {\'e}es sur le mod\IeC {\`e}le 3D.}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Finalisation}{10}}
+\@writefile{toc}{\contentsline {paragraph}{ Ce projet a \IeC {\'e}t\IeC {\'e} int\IeC {\'e}ressant puisque, entre autres, on sait qu'il sera utilis\IeC {\'e} par la suite par des \IeC {\'e}tudiants de GTE. Nous avons donc appris \IeC {\`a} tenir la date limite des modifications demand\IeC {\'e}es \IeC {\'e}tant donn\IeC {\'e} qu'il devait \IeC {\^e}tre op\IeC {\'e}rationnel pour ces futurs utilisateurs. }{10}}
+\@writefile{toc}{\contentsline {paragraph}{Pour r\IeC {\'e}ussir \IeC {\`a} tenir ces dates, \IeC {\'e}videmment le travail en groupe a \IeC {\'e}t\IeC {\'e} un des \IeC {\'e}l\IeC {\'e}ments cl\IeC {\'e}s. Gr\IeC {\^a}ce \IeC {\`a} cette collaboration, nous avons r\IeC {\'e}ussi \IeC {\`a} r\IeC {\'e}aliser les demandes du projet en temps et en heure, ce qui est \IeC {\'e}videmment important.}{11}}
+\@writefile{toc}{\contentsline {paragraph}{ Nous avons \IeC {\'e}galement pu approfondir nos connaissances en PHP ainsi qu'en Javascript pour la r\IeC {\'e}alisation du projet. Nous avons \IeC {\'e}galement pu comprendre comment r\IeC {\'e}aliser un mod\IeC {\`e}le 3D sur un site internet, gr\IeC {\^a}ce \IeC {\`a} l'apprentissage de la biblioth\IeC {\`e}que THREE.JS et HIGHCHARTS, en accord avec une base de donn\IeC {\'e}es.}{11}}
+\@writefile{toc}{\contentsline {paragraph}{ C'est donc cet ensemble qui nous ont permis d'avoir une exp\IeC {\'e}rience de nos connaissances acquises \IeC {\`a} l'IUT et \IeC {\'e}galement ce que nous serons amen\IeC {\'e}s \IeC {\`a}, peut-\IeC {\^e}tre, r\IeC {\'e}aliser par la suite. C'est pourquoi nous remercions nos enseignants qui nous ont appris comment un travail pourrait se r\IeC {\'e}aliser par la suite, lors de notre vie professionnelle.}{11}}

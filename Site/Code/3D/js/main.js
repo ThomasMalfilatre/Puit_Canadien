@@ -92,7 +92,7 @@ function init(){
 
 	//axes
 	var axes = new THREE.AxisHelper(500);
-	// scene.add( axes );
+	scene.add( axes );
 
 	var floorGeometryArr = new THREE.PlaneGeometry(1800, 420, 1, 1);
 	var floorGeometry = new THREE.PlaneGeometry(1800, 600, 1, 1);

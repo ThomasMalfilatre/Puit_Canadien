@@ -1,7 +1,7 @@
 <?php
     define('HOST', 'info2');
-    define('USER', 'malfilatre');
-    define('PASS', 'malfilatre');
-    define('BASE', 'Bmalfilatre');
+    define('USER', 'lecorre');
+    define('PASS', 'lecorre');
+    define('BASE', 'DBlecorre');
 ?>
 

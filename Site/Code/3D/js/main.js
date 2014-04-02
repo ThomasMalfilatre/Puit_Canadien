@@ -167,7 +167,35 @@ function init(){
 	coin2.position.y = 620;
 	scene.add(coin2);
 
-	
+	/* VMC */
+
+	var vmcMaterial = new THREE.MeshBasicMaterial({color: 0x000000, wireframe:true})
+	var vmcGeometry = new THREE.PlaneGeometry(200, 200, 6, 6);
+	var vmch = new THREE.Mesh(vmcGeometry, vmcMaterial);
+	vmch.position.set(-800,840,500);
+	vmch.rotation.x = Math.PI/2;
+	vmch.name = "vmc";
+	scene.add(vmch);
+
+	var vmcarr = new THREE.Mesh(vmcGeometry, vmcMaterial);
+	vmcarr.position.set(-800,740,400)
+	vmcarr.name = "vmc";
+	scene.add(vmcarr);
+
+	var vmcd = new THREE.Mesh(vmcGeometry, vmcMaterial);
+	vmcd.position.set(-700,740,500)
+	vmcd.rotation.y = Math.PI/2;
+	vmcd.name = "vmc";
+	scene.add(vmcd);
+
+
+	// var vmcGeometry = new THREE.CubeGeometry( 200, 200, 200 ); 
+	// var vmcMaterial = new THREE.MeshBasicMaterial( {color: 0x00ff00, wireframe:true }); 
+	// var vmc = new THREE.Mesh( vmcGeometry, vmcMaterial ); 
+	// vmc.position.x = -800
+	// vmc.position.y = 700
+	// vmc.position.z = 400
+	// // scene.add( vmc );
 
 	// initialize object to perform world/screen calculations
 	projector = new THREE.Projector();

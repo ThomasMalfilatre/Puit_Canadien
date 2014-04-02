@@ -30,7 +30,7 @@
             <div id="tabs">
                 <ul>
                     <li><a href="#tabs-1">Sélection des sondes</a></li>
-                    <li><a href="#tabs-2">Graphique</a></li>
+                    <!--<li><a href="#tabs-2">Graphique</a></li>-->
                     <li><a href="#tabs-3">Position des sondes</a></li>
                 </ul>
                 <div id="tabs-1">

@@ -1,4 +1,4 @@
-<?php require_once('../../admin/ConnexionBD.php'); ?>
+<?php require_once('../admin/ConnexionBD.php'); ?>
 
 <script type='text/javascript' src='jquery.min.js'></script>
 <script type="text/javascript" src="highcharts.js" ></script>
@@ -26,17 +26,17 @@ Function generer_Graphique($dateDeb , $dateFin , $sondes, $conteneur){
 		}
 	}
 
-	$date_explosee = explode("-", $dateDeb);  // la fonction explode permet de séparer la chaine en tableau selon un délimiteur
+	$date_explosee = explode("/", $dateDeb);  // la fonction explode permet de séparer la chaine en tableau selon un délimiteur
 
-	$jourDeb = $date_explosee[2];
-	$moisDeb = $date_explosee[1];
-	$anneeDeb = $date_explosee[0];
+	$jourDeb = $date_explosee[1];
+	$moisDeb = $date_explosee[0];
+	$anneeDeb = $date_explosee[2];
 
-	$date_explosee = explode("-", $dateFin);
+	$date_explosee = explode("/", $dateFin);
 
-	$jourFin = $date_explosee[2];
-	$moisFin = $date_explosee[1];
-	$anneeFin = $date_explosee[0];
+	$jourFin = $date_explosee[1];
+	$moisFin = $date_explosee[0];
+	$anneeFin = $date_explosee[2];
 
 
 ?>

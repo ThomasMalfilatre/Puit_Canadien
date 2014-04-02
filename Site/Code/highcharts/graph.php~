@@ -1,0 +1,21 @@
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<?php
+require_once("dessiner_graph.php");
+
+$v = explode("Sonde",$_GET["Sondes"]);
+$res = array();
+foreach($v as $i){
+echo $i."ok";
+	   $res[]= "Sonde".$i;
+}
+foreach($res as $i){
+echo $i;
+}
+
+if( !empty($_GET["datedeb"]) && !empty($_GET["datefin"]))
+    generer_Graphique($_GET["datedeb"],$_GET["datefin"], array("Sonde B1-4","Sonde B1-2.5"),"container" );
+else
+header('Location:../graphique.php');
+?>

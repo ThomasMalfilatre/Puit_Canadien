@@ -39,9 +39,7 @@
 	<input type="text" name="datefin" id="datepicker2"/>
 	<br />
 	<br />
-
-   <input type ="hidden" value="" id="Sondes" name="Sondes" value="ok"/>
-
+<input type ="hidden" value="" id="Sondes" value="ok"/>
 
 	<input type="submit" value="Generer_graphe"/>	 
 

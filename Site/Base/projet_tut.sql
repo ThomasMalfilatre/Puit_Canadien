@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  info2
--- Généré le :  Mer 02 Avril 2014 à 13:03
+-- Généré le :  Mer 02 Avril 2014 à 14:45
 -- Version du serveur :  5.5.24-4-log
 -- Version de PHP :  5.4.9-4ubuntu2.4
 
@@ -56,7 +56,6 @@ INSERT INTO `Appartient_Corbeille` (`Sonde_id`, `Corbeille_id`) VALUES
 (16, 4),
 (17, 4),
 (18, 4),
-(40, 6),
 (19, 8),
 (20, 8),
 (21, 8);
@@ -188,18 +187,17 @@ INSERT INTO `Sonde` (`Sonde_id`, `Nom`, `Niveau`, `posX`, `posY`, `posZ`) VALUES
 (26, 'REF-3', 3, 225, 120, 435),
 (27, 'REF-3.5', 3.5, 225, 70, 435),
 (28, 'REF-4', 4, 225, 20, 435),
-(29, 'Air_exterieur', 0, 0, 0, 0),
+(29, 'Air_exterieur', 0, 850, 550, 300),
 (30, 'Air_sortie_PC', 0, -850, 480, 550),
 (31, 'Tube 24m', 2, -494, 50, 550),
 (32, 'Tube 18m', 2, -158, 140, 550),
 (33, 'Tube 12m', 2, 178, 220, 550),
 (34, 'Tube 6m', 2, 515, 300, 550),
-(35, 'Extraction', 0, 0, 0, 0),
-(36, 'Insufflation', 0, 0, 0, 0),
-(37, 'Rejet', 0, 0, 0, 0),
-(38, 'Air neuf', 0, 0, 0, 0),
-(39, 'Air entree pc', 0, 850, 480, 550),
-(40, 'Sonde D3-4', 4, 150, 20, 150);
+(35, 'VMC Extraction', 0, -800, 800, 450),
+(36, 'VMC Insufflation', 0, -800, 700, 450),
+(37, 'VMC Rejet', 0, -800, 800, 550),
+(38, 'VMC Air neuf', 0, -800, 700, 550),
+(39, 'Air entree pc', 0, 850, 480, 550);
 
 -- --------------------------------------------------------
 

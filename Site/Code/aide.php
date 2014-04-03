@@ -3,6 +3,7 @@
 <html lang="fr">
     <head>
         <?php include('block/head/head.php'); ?>
+        <link rel="stylesheet" type="text/css" href="css/doc.css">
     </head>
     <body>
         <?php include('block/body/header.php'); ?>

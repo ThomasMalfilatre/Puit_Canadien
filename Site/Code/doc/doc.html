@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="generator" content="hevea 2.02">
-<link rel="stylesheet" type="text/css" href="doc.css">
+<meta  charset="UTF-8">
 <title>Documentation
 </title>
 </head>
 <body >
 
-<h1 id="sec1" class="part"><center>Partie I<br>
-Gérer le graphique</center></h1>
+<p>
+    Aller directement à la partie traitant de :<br />
+    <ul>
+    <li><a href="sec1">Partie 1 - Gérer  les graphiques</a><br/></li>
+    	<ul>
+    	<li><a href="#sec3">1.1 - Compréhension du graphique</a><br /></li>
+   	 	<ul>
+    		<li><a href="#sec4">1.1.1 - Sélectionner une sonde</a><br /></li>
+	    	<li><a href="#sec5">1.1.2 - Désélectionner une sonde</a><br /></li>
+    		<li><a href="#sec6">1.1.3 - Sélectionner les dates</a><br /></li>
+    		<li><a href="#sec7">1.1.4 - Générer le graphe des températures</a><br /></li>
+    	</ul>
+    	<li><a href="#sec8">1.2 - Graphe des températures </a><br /></li>
+    	<ul>
+    		<li><a href="#sec9">1.2.1 - Le zoom</a><br /></li>
+    		<li><a href="#sec10">1.2.2 - L'exportation du graphe</a><br /></li>
+    		<li><a href="#sec11">1.2.3 - L'impression</a><br /></li>
+    	</ul>
+    	<li><a href="#sec12">1.3 - Position des sondes</a><br /></li>
+    </ul>
+    <li><a href="#sec13"> Partie 2 - Administration</a><br/></li>
+    <ul>
+    	<li><a href="#sec14">2.1 - Ajout de données</a><br /></li>
+    	<ul>
+    		<li><a href="#sec15">Ajouter une sonde</a><br /></li>
+    		<li><a href="#sec16">Ajouter une corbeille</a><br /></li>
+    		<li><a href="#sec17">Ajouter un puits</a><br /></li>
+    	</ul>
+		<li><a href="#sec18">2.2 - Suppression de données</a><br /></li>
+		<ul>
+	    	<li><a href="#sec19">Supprimer une sonde</a><br /></li>
+	    	<li><a href="#sec20">Supprimer une corbeille</a><br /></li>
+	    	<li><a href="#sec21">Supprimer une puits</a><br /></li>
+	    </ul>
+	    <li><a href="#sec22">2.3 - Importation / Exportation</a><br /></li>
+	    <li><a href="#sec23">2.4 - Arduino</a><br /></li>
+		
+	</ul>
+
+</p>
+<h1 id="sec1" class="part">Partie I<br>
+Gérer les graphiques</h1>
 
 <h5 id="sec2" class="paragraph">
 	
@@ -28,21 +66,23 @@ Pour accéder au graphique, il suffit de cliquer sur "Graphique".
 <p> Cliquer sur la zone texte réservée à cet effet pour ouvrir un calendrier et sélectionner la date.<br/>
 ATTENTION, le format s'affichera en MM/JJ/AAAA</p>
 
-<h3 id="sec6" class="subsection">1.1.4  Générer le graphe température</h3>
+<h3 id="sec7" class="subsection">1.1.4  Générer le graphe température</h3>
 <p>Une fois, toutes les sondes voulues sélectionnées ainsi que les dates de début et de fin
 il suffit de cliquer sur le bouton "Générer graphe" pour afficher le graphe des températures.</p>
+
 <br/>
+
 <h2 id="sec8" class="section">1.2. Graphe des températures </h2>
 <p> Une fois le bouton "Générer graphe" cliqué, le graphe des températures va apparaitre avec une courbe de couleur
 différente pour chaque sonde. La température selon l'axe des ordonnées et les différentes dates suivant l'axe des abscisses. </p>
 
-<h3 id="sec9" class="section">1.2.1. Le Zoom</h3>
+<h3 id="sec9" class="subsection">1.2.1. Le Zoom</h3>
 <p>Pour zoomer sur une partie du graphe il faut maintenir la souris appuyé du début de la zone à zoomer et, tout en mainteant la souris
 maintenue, décaler la souris jusqu'à la fin de la zone à zoomer. Enfin, il faut relâcher la souris et le graphe va zoomer automatiquement
 sur cette partie. <br/>
 Pour remettre le zoom à 0, il faut cliquer sur "Reset Zoom" situé en haut à droite. </p>
 
-<h3 id="sec10" class="section">1.2.2. L'exportation du graphe</h3>
+<h3 id="sec10" class="subsection">1.2.2. L'exportation du graphe</h3>
 <p>Le graphe des températures peut s'exporter de différentes façons :
 <ul>
 	<li> En format PNG </li>
@@ -52,7 +92,7 @@ Pour remettre le zoom à 0, il faut cliquer sur "Reset Zoom" situé en haut à d
 </ul> 
 Pour cela, il faut cliquer sur le menu situé en haut au droite du graphe.</p>
 
-<h3 id="sec11" class="section">1.2.3. L'impression</h3>
+<h3 id="sec11" class="subsection">1.2.3. L'impression</h3>
 <p> L'impression du graphe est aussi disponible. Pour cela, il suffit d'aller dans le menu situé en haut à droite et de cliquer sur
 "Print Chart". La fenêtre d'impression va alors s'ouvrir. </p>
 
@@ -81,10 +121,38 @@ x pour la largeur et z pour la profondeur.</p>
 
 <h3 id="sec17" class="subsection">2.1.3. Ajouter un puits</h3>
 <p>Pour ajouter un puits, il faut aller dans le menu "Ajouter un puits".<br/>
-Ensuite, il suffit justee de donner le nom du puits pour l'ajouter dans la base de donénes.</p>
+Ensuite, il suffit juste de donner le nom du puits pour l'ajouter dans la base de données.</p>
+<br/>
+<h2 id="sec18" class="section">2.2. Suppression de données</h2>
 
+<h3 id="sec19" class="subsection">2.2.1. Supprimer une sonde</h3>
+<p>Pour supprimer une sonde, il faut aller dans le menu "Supprimer une sonde". <br/>
+Ensuite, il suffit de sélectionner LA OU LES sondes que l'on veut supprimer de la base de données, et de valider en cliquant 
+sur "Supprimer".<br/>
+Pour (dé)sélectionner plusieurs sondes, maintenez la touche CTRL + clic de la souris sur les sondes voulues.</p>
 
-<!--HTMLFOOT-->
-<!--ENDHTML-->
-<!--FOOTER-->
+<h3 id="sec20" class="subsection">2.2.2. Supprimer une corbeille</h3>
+<p>Pour supprimer une corbeille, il faut aller dans le menu "Supprimer une corbeille". <br/>
+Ensuite, il suffit de sélectionner LA OU LES corbeilles que l'on veut supprimer de la base de données, et de valider en cliquant 
+sur "Supprimer".<br/>
+Pour (dé)sélectionner plusieurs corbeilles, maintenez la touche CTRL + clic de la souris sur les corbeilles voulues.<br/>
+<strong>ATTENTION, LA SUPPRESSION DE LA CORBEILLE NE SUPPRIME PAS LES SONDES QUI Y SONT ATTACHEES.</strong></p>
+
+<h3 id="sec21" class="subsection">2.2.3. Supprimer un puits</h3>
+<p>Pour supprimer un puits, il faut aller dans le menu "Supprimer un puits". <br/>
+Ensuite, il suffit de sélectionner LE OU LES puits que l'on veut supprimer de la base de données, et de valider en cliquant 
+sur "Supprimer".<br/>
+Pour (dé)sélectionner plusieurs puits, maintenez la touche CTRL + clic de la souris sur les puits voulus.</p>
+
+<h3 id="sec22" class="section">2.3. Importation / Exportation</h3>
+<p> Pour accéder à l'importation et l'exportation, il faut cliquer sur le menu Importation/Exportation.</p>
+<h4> Importation </h4>
+<p> Pour importer une base SQL, il suffit de parcourir les fichiers où est la base SQL, et ensuite de cliquer sur Importer. </p>
+<h4> Exportation </h4>
+<p> Pour l'exportation, il suffit d'entrer le nom que l'on veut donner à notre fichier puis de cliquer sur Exporter</p>
+
+<h3 id="sec23" class="section">2.4. Arduino </h3>
+<p> Pour accéder à l'Arduino, il faut cliquer sur le menu Arduino.<br/>
+Ensuite, il suffit d'indiquer la valeur de la fréquence que l'on veut, en millisecondes.</p>
+
 </html>

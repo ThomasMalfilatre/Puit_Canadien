@@ -1,0 +1,22 @@
+.part{
+	text-align: center;
+	color: red;
+}
+
+.section{
+	margin-left: 40px;
+	color: green;
+}
+
+.subsection{
+	margin-left: 80px;
+	color: orange;
+}
+
+a:link{
+	color:blue;
+	text-decoration: underline;
+}
+
+a:visited{
+	color:#800080;

@@ -22,3 +22,5 @@ if( !empty($_GET["datedeb"]) && !empty($_GET["datefin"]))
 else
 header('Location:../graphique.php');
 ?>
+
+<input type="button" value="Recuperer les donnees" onclick="document.location.replace('Exportation_Fichier.php')" />
